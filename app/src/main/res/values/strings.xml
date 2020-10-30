@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">DriveXpress</string>
+    <string name="google_api">AIzaSyDN_EKxx9ndRamOj2KogZ43mAWrHriuQkQ</string>
+    <string name="google_api_adddress">AIzaSyDN_EKxx9ndRamOj2KogZ43mAWrHriuQkQ</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="action_ok">Ok</string>
+    <string name="action_cancel">CANCEL</string>
+    <string name="action_yes">YES</string>
+    <string name="action_no">NO</string>
+    <string name="alert_title_permission">Need Permissions</string>
+    <string name="alert_msg_permission">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="goto_setting">GOTO SETTINGS</string>
+    <string name="na">NA</string>
+    <string name="error">Error</string>
+    <string name="msg_error">Something went wrong.</string>
+    <string name="title_connection_alert">Connection Error</string>
+    <string name="msg_try_with_active_network">Please connect with active network connection and Try again.</string>
+
+
+    <string name="dashbord_btn_sos">SOS</string>
+    <string name="idle_note">Note: Seems you are sitting idle since long time. Kindly choose the idle reason.</string>
+    <string name="rest_note">Note: Seems you are running from long time. Kindly take rest or choose reason for not taking rest.</string>
+    <string name="sos_note">Note: Get urgent help in case of any emergency based on your shown current location.</string>
+    <string name="speed_note">Note: You are continuously driving vehicle at high speed. Please slow down your vehicle.</string>
+    <string name="accuracy_reminder_message">Application not able to recognize your location. Tap here to recognize your location.</string>
+
+    <string name="rest_reminder_title">Take Rest</string>
+    <string name="rest_reminder_message">You are running since long time.Take rest!</string>
+
+    <string name="rest_complete_reminder_title">Rest Reminder </string>
+    <string name="rest_complete_reminder_about_message">Your Rest Time is about to complete.Do hurry!</string>
+    <string name="rest_complete_reminder_message">Your Rest Time is complete..Do hurry!</string>
+    <string name="rest_complete_reminder_aftre_message">You have exceeds your rest time limit already.Do hurry!</string>
+
+    <string name="idle_reminder_title">Idle</string>
+    <string name="idle_reminder_message">You are idle from long time.Provide reason!</string>
+
+    <string name="overspeed_title">Over Speed</string>
+    <string name="over_speed_message">You are running continuously in OverSpeed.Slow down!</string>
+
+    <string name="too_fast_title">Too fast</string>
+    <string name="to_fast_message">You are running with Max speed.Slow down!</string>
+
+
+    <string name="driver_behaviour">Driver Behaviour</string>
+    <string name="driver_behaviour_brake_message">Harsh braking is detect drive safely</string>
+    <string name="driver_behaviour_acceleration_message">Harsh acceleration is detect drive safely</string>
+
+    <string name="geo_fance">Geo fencing</string>
+    <string name="geo_fance_in_message">You are inside the Geo Fencing </string>
+
+    <string name="geo_fance_out_message">You are going Outside of the Geo Fencing </string>
+
+    <string name="alert">Alert</string>
+    <string name="gps_alert_meesage">GPS is turn off</string>
+
+    <string name="accuracy_title">Accuracy</string>
+
+    <string name="OPEN_WEATHER_MAP_API_KEY">320384612eed1f1bf8b8c4a72f12cfb8</string>
+
+
+    <!--Dashboard-->
+    <string name="label_brake_taken_nbefore">BREAK TAKEN\nBEFORE</string>
+    <string name="lable_remaining_nbrake_in">REMAINING\nBREAK-IN</string>
+    <string name="label_completed_kms">COMPLETED\n0 KMS</string>
+    <string name="lable_remaining_fule">REMAINING\nFULE</string>
+    <string name="label_avrage_speed">AVERAGE\nSPEED</string>
+    <string name="label_current_speed">CURRENT\nSPEED</string>
+    <string name="label_total_drive_ntime">TOTAL DRIVE\nTIME</string>
+    <string name="label_total_rest_time">TOTAL REST\nTIME</string>
+    <string name="label_total_idle_ntime">TOTAL IDLE\nTIME</string>
+    <string name="label_operations">OPERATIONS</string>
+    <string name="label_tracking">TRACKING</string>
+    <string name="label_entertain">ENTERTAIN</string>
+    <string name="label_info">INFO</string>
+    <string name="label_emergency">EMERGENCY</string>
+    <string name="label_nearby">NEARBY</string>
+    <string name="label_fuel">FUEL</string>
+    <string name="label_toll">TOLL</string>
+
+
+    <!--Tracking-->
+    <string name="label_completed">COMPLETED</string>
+
+
+    <!--NearBy-->
+    <string name="label_show_list">show list</string>
+    <string name="title_nearBy">NearBy</string>
+    <string name="label_radius">RADIUS</string>
+    <string name="label_food">FOOD</string>
+    <string name="label_fuel_nearby">FUEL</string>
+    <string name="label_hospital">HOSPITAL</string>
+    <string name="label_truck_service">TRUCK SERVICE</string>
+    <string name="label_driver_friends">DRIVER FRIENDS</string>
+
+
+    <!--Toll-->
+    <string name="label_toll_list">Toll List</string>
+    <string name="label_toll_cost">Toll Cost :</string>
+    <string name="Rs">\u20B9</string>
+    <string name="label_get_route">Get Route</string>
+    <string name="hint_destination">Choose destination</string>
+    <string name="label_starting_point">Choose Starting Point</string>
+    <string name="label_toll_details">Toll Details</string>
+    <string name="label_duration">Duration</string>
+    <string name="label_distance">Distance</string>
+    <string name="label_toll_bottom">Toll</string>
+    <string name="label_diesel">Diesel</string>
+    <string name="label_total">Total</string>
+
+
+    <string name="msg_enter_company_code">Enter company code</string>
+    <string name="msg_api_call_might_be_some_network_related_issue">Might be some network related issue is there.Please try again !</string>
+    <string name="msg_api_call_connection_timeout">Connection Time Out</string>
+    <string name="msg_api_call_socket_time_out">Socket Time out</string>
+    <string name="msg_api_call_certificate_issue">Certificate Issue</string>
+    <string name="msg_api_call_connection_establish_issue">Connection establishment issue with server.</string>
+    <string name="msg_api_call_error">Error : %1$s</string>
+    <string name="msg_gson_parsing_error">GSON Parsing Error</string>
+    <string name="msg_might_be_some_issue_occur">There might be some issue occurred. Please try again !!</string>
+
+
+    <string name="label_registration_welcome_app">Welcome to %1$s </string>
+    <string name="label_registration_ask_for_alias_if_dont_have">If you don\'t have your alias\'s code,\n please contact and ask for their alias.</string>
+    <string name="hint_registration_enter_tenant_alias">Enter Tenant alias</string>
+    <string name="btn_registration_register_tenant">Register Tenant</string>
+    <string name="label_registration_register_with_alias_to_proceed">Please register with your\n Tenant Id to proceed.</string>
+    <!--Login Screen-->
+    <string name="hint_authentication_user_id">User ID</string>
+    <string name="hint_authentication_password">Password</string>
+    <string name="label_authentication_remember_me">Remember Me</string>
+    <string name="btn_authentication_sign_in">Sign in</string>
+    <string name="label_authentication_forgot_password">Forgot password?</string>
+    <string name="label_pvt_ltd">\u00a9 2019-20,Desai Pvt. Ltd.</string>
+    <string name="msg_enter_user_id">Please Enter User ID</string>
+    <string name="msg_enter_password">Please Enter Password</string>
+
+
+    <string name="label_privacy_policy">Privacy Policy</string>
+    <string name="label_extent_of_usage">\nExtent of Usage</string>
+    <string name="label_user_data">\nUser data</string>
+    <string name="label_ownership_and_accountability">\nOwnership and accountability</string>
+    <string name="label_limited_liability">\nLimited liability</string>
+    <string name="label_product_updates">\nProduct updates</string>
+    <string name="label_product_support">\nProduct support</string>
+    <string name="label_product_enhancement">\nProduct enhancement</string>
+    <string name="label_termination_of_services">\nTermination of services</string>
+    <string name="label_timely_payment">\nTimely payment</string>
+    <string name="label_cancellations_and_refund_policy">\nCancellations and refund policy</string>
+    <string name="label_data_privacy">\nData privacy</string>
+    <string name="label_delivery_agent_login_data">\nDelivery agent login data</string>
+    <string name="action_continue">I Agree</string>
+    <string name="msg_agree_terms_conditions">Please agree the terms and conditions</string>
+    <string name="label_agree_terms_conditions">I understand and agree</string>
+    <string name="label_privacy1">Thanks for choosing %1$s. The terms mentioned here cover your access and use of our services, software application(s), and website. By using our services, it is assumed that you have reviewed and are agreeing to all our Terms and Privacy policies mentioned as follows. If you are using our services for an organisation, you\'re agreeing to these terms on behalf of that organisation. We may modify these terms or add terms at any time if any feature updates or government laws mandate them. You should look at the terms regularly. We will notify you as and when we make any updates.</string>
+    <string name="label_privacy2">No restrictions are placed on the features of %1$s regardless of your usage plan. There is however a limit on volume of usage. You can select a plan appropriate to your usage requirements.</string>
+    <string name="label_privacy3">Regardless of your usage plan, all your data (“proof documents”) are stored on our cloud server as long as your account is active Since %1$s stores a lot of media, we have a time limit of 3 months for its storage, after which it is archived. You can retrieve your data from the archive whenever you wish. In case of termination of account or for any other reason, you can download your data in bulk at any point of time.</string>
+    <string name="label_privacy4">On matters of content ownership, it should be noted that %1$s is a tool and cannot be held liable for copyright issues on the data stored within it. It is inherently assumed that all data added by you belongs to you. To protect your content, %2$s has industry standard security measures in place. You are solely in control of the distribution of your data. In extension, only you (“the owner”) and your users are responsible for the sharing of your data and at no time can %3$s be held accountable for any data being made available to any unauthorised party. Please safeguard your login IDs and make sure that others don\'t have access to it.</string>
+    <string name="label_privacy5">In no event is %1$s liable for any damages owing to loss of data, profit or business interruption arising out of the inability to use the system. You will be solely responsible for any damages or loss to any party resulting from it.</string>
+    <string name="label_privacy6">We occasionally release new features. Even though these additions will be extensively tested before their release, there may be a chance that they initially do not function optimally. Do bear the above risk in mind while using these features.</string>
+    <string name="label_privacy7">We strive very hard to provide you with the best quality of service. That said, there are always chances of occasional issues and we are committed to solving them. However, we only consider something as an issue when said feature does not work as advertised. You can raise a ticket for any issue you face or email us about it. You can contact us at business@webxpress.in. Do note that we may not be able to individually respond to the comments you submit.</string>
+    <string name="label_privacy8">Our services and included products (web-portal and mobile app) are available to you as-is. We do not entertain any unsolicited feature request or idea submissions. However, we do occasionally release updates and may choose to incorporate the ideas we receive. In this case, any idea that you provide to us shall be deemed to be non-confidential and we (“%1$s”) shall be free to use such information on an unrestricted basis. If we need to follow-up on your suggestions, we will have one of our representatives correspond with you.</string>
+    <string name="label_privacy9">You (“the owner”) can delete your account (and all associated data and users) at any point of time. Also, your account may be auto-terminated in case of recurring non-payment of dues or prolonged non-usage. In any case, you will be provided with 24 hours to take a backup of your data from %1$s before it is permanently erased. Email notifications will be provided to you (“the owner”) twice. (1) 24 hours before your account is set to be terminated and (2) immediately after it is.</string>
+    <string name="label_privacy10">Currently, we do not offer an auto payment method. You can elect to make payments monthly, quarterly, or annually. Account owners and designated managers (optional) will receive email alerts and in-system notifications a few days before the due date of the next billing cycle. To avoid interruptions in service kindly ensure payment is made on the due date or within the window mentioned above. Failure to pay applicable fees may result in the interruption of your account usage. Your latest payment amount and timeline selections become default for the next cycle.</string>
+    <string name="label_privacy11">You may downgrade your Business subscription at any time with no prior notice. You will still have applicable usage limits up to the end of your current cycle (and will be billed for it). Payment details can be managed in Account tab of the Settings menu. Generally, all charges are non-refundable. However, an exception may be considered if there is a good reason for it, in which case, refunds will be either monetary or in the form of usage credits depending on each case. Refund will be on a pro rata basis.</string>
+    <string name="label_privacy12">Customer privacy is of top concern at %1$s. All information uploaded on our system, is stored securely on our Microsoft Azure based cloud server. None of this data is shared with any third party organisation nor is it used for any targeted advertising purposes. We may use some data for occasional internal research, but only to improve product features and stability. For any additional information, please feel free to contact us at business@webxpress.in</string>
+    <string name="label_privacy13">We at %1$s have a goal to offer the simplest possible mobile delivery solution. Around the world, the acceptability of technology varies; keeping this in mind, we have replaced the typical username and password based login with an auto-login process. In other words, the app user’s primary email ID and phone number are used to authenticate them. Either you provide these details or when your users open the app for the first time, your approval is asked for them to be added into your user list. Rest assured, this, like all your other data, is stored safely on our servers and is never shared with anyone, under any circumstances.</string>
+    <string name="title_alert_login_failed">Login Failed</string>
+    <string name="title_alert_confirm_logout">Logout</string>
+    <string name="msg_alert_confirm_logout">Are you sure want to Logout?</string>
+    <string name="msg_offline_login_failed">Login Failed \nInvalid Credentials.....\nPlease Try Login With Working Internet Connection.....</string>
+    <string name="msg_tenenat_id_not_found">Tenant Id Not Found</string>
+
+
+    <string name="action_info_change_tenant"><![CDATA[<u>CHANGE TENANT</u>]]></string>
+    <string name="title_information">App Information</string>
+    <string name="label_info_app_name">App name</string>
+    <string name="label_info_device_id">Device Id</string>
+    <string name="label_info_app_version">App version</string>
+    <string name="label_info_alias">Tenant Alias</string>
+    <string name="label_info_alias_name">Alias name</string>
+    <string name="no">No</string>
+    <string name="label_sign_out">SIGN OUT</string>
+    <string name="str_disconnect">DISCONNECT</string>
+
+    <string name="label_notification_data_sync_in_progress">Data sync in process ...</string>
+
+
+    <!--Root Checker-->
+    <string name="app_unknown">SUPERUSER APP : Unknown</string>
+    <string name="verifying">Verifying root..</string>
+    <string name="wait">Checking, please wait..</string>
+    <string name="check_complete">Checking complete</string>
+    <string name="not_rooted">NOT ROOTED</string>
+    <string name="rooted">DEVICE IS ROOTED</string>
+    <string name="permission_denied">ROOT PERMISSION NOT GRANTED OR SUPERUSER APP MISSING</string>
+    <string name="Root_Message">This application is not compatible with rooted device.</string>
+    <string name="yes_busybox">BUSYBOX INSTALLED :</string>
+    <string name="no_busybox">BUSYBOX NOT INSTALLED OR NOT SYMLINKED</string>
+    <string name="su_app">SUPERUSER APP :</string>
+
+
+</resources>

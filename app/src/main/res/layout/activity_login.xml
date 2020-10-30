@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="Logininput"
+            type="com.neel.desai.mylocation.viewmodel.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/dimen_footer"
+        tools:context=".activity.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_fifteen"
+            android:layout_marginRight="@dimen/dimen_fifteen"
+            android:background="@drawable/all_corner_round_drawable"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_registration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="15dp">
+
+            <ImageView
+                android:id="@+id/imgCustomerLogo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_logo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_use_id"
+                style="@style/CustomTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_card_componant_specing"
+                android:hint="@string/msg_enter_user_id">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_user_name"
+                    style="@style/customEditText"
+                    android:imeOptions="actionNext"
+                    android:text="@={Logininput.emailAddress}"
+                    android:textColorHint="@color/colorHint"
+                    android:typeface="sans" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                style="@style/CustomTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_card_componant_specing"
+                android:hint="@string/msg_enter_password"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorAccent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_password"
+                    style="@style/customEditText"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:text="@={Logininput.password}"
+                    android:textColorHint="@color/colorHint"
+                    android:typeface="sans" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signIn"
+                style="@style/customButton"
+                android:elevation="0dp"
+                android:text="Login"
+                android:onClick="@{(v) -> Logininput.onClick()}"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/label_pvt_ltd"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_app_info" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_app_info"
+            android:layout_width="@dimen/dimen_icon"
+            android:layout_height="@dimen/dimen_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@mipmap/img_info"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

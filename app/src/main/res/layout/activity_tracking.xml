@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.neel.desai.mylocation.viewmodel.TrackingViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/bg_half"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/status_size"
+            android:background="@android:color/transparent"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:id="@+id/tracking_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/defult_margin_screen"
+                android:layout_marginRight="@dimen/defult_margin_screen"
+                android:layout_marginBottom="@dimen/dimen_ten"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/layout_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimen_five"
+                        android:layout_marginBottom="@dimen/dimen_five"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_Currentvalue"
+                                    style="@style/customLabelValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/dashbord_value_text" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/customLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" KM/H"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/dashbord_lable_text" />
+                            </LinearLayout>
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvCurrentmsg"
+                                style="@style/customLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/label_current_speed"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/dashbord_lable_text" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_Completevalue"
+                                    style="@style/customLabelValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="@android:color/white"
+
+                                    android:textSize="@dimen/dashbord_value_text" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/customLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text=" KM"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/dashbord_lable_text" />
+                            </LinearLayout>
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvCompletemsg"
+                                style="@style/customLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/label_completed"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/dashbord_lable_text" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_five"
+                        android:layout_marginBottom="@dimen/dimen_five"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_drivevalue"
+                                style="@style/customLabelValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/white"
+
+                                android:textSize="@dimen/dashbord_value_text" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvdrivemsg"
+                                style="@style/customLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/label_total_drive_ntime"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/dashbord_lable_text" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_Remainvalue"
+                                    style="@style/customLabelValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/dashbord_value_text" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/customLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text=" KM"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/dashbord_lable_text" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_Remainmsg"
+                                style="@style/customLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/lable_remaining_nbrake_in"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/dashbord_lable_text" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_idlevalue"
+                                style="@style/customLabelValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/dashbord_value_text" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvidlemsg"
+                                style="@style/customLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/label_total_idle_ntime"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/dashbord_lable_text" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map_tracking"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tracking_info" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_Sos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dashbord_floting_margin"
+            android:layout_marginBottom="@dimen/dashbord_floting_marginbottom"
+            android:clickable="false"
+            android:elevation="0dp">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/iv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_ten"
+                android:clickable="false"
+                android:elevation="0dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_mylocation"
+                app:backgroundTint="@color/white"
+                app:fabSize="auto" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/iv_sos"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_current"
+                android:alpha="0.5"
+                android:clickable="false"
+                android:elevation="0dp"
+                android:src="@drawable/ic_sos"
+                app:backgroundTint="@color/colorAccent"
+                app:fabSize="auto"
+                app:srcCompat="@drawable/ic_sos"
+                app:tint="@color/white"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dimen_ten">
+
+
+            <com.jaygoo.widget.VerticalRangeSeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="50dp"
+                android:layout_height="300dp"
+                android:progressDrawable="@drawable/seekbar"
+                app:rsb_max="21"
+                app:rsb_min="1"
+                app:rsb_mode="single"
+                app:rsb_orientation="left"
+                app:rsb_progress_color="@color/colorAccent"
+                app:rsb_progress_default_color="@color/colorAccent"
+
+                app:rsb_thumb_drawable="@drawable/seekbar_tint" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

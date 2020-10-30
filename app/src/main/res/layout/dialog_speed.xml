@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.neel.desai.mylocation.viewmodel.SpeedViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:padding="40dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dimen_ten"
+            app:cardElevation="@dimen/dimen_five"
+            app:cardPreventCornerOverlap="false">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/map_sos"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_meter" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_thirty"
+
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_time"
+                                    style="@style/customLabelValue"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="30 mins " />
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/customLabel"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/dimen_five"
+                                    android:gravity="center"
+                                    android:text="FROM TIME" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_Distance"
+                                    style="@style/customLabelValue"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="60 Km" />
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+
+                                    style="@style/customLabel"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/dimen_five"
+                                    android:gravity="center"
+                                    android:text="DISTANCE" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            style="@style/customTextNotes"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/defult_margin_screen"
+                            android:layout_marginTop="@dimen/dimen_thirty"
+                            android:gravity="left"
+                            android:minLines="2"
+                            android:text="@string/speed_note" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/close"
+                            style="@style/customButton"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_ten"
+                            android:gravity="center"
+                            android:text="Go Slow"
+                            app:typeface_bt="helvitica_bold" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

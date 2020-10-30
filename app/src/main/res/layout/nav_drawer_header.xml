@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgUserProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_user_profile"
+            android:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserName"
+            style="@style/customNavigationHeader"
+            android:layout_marginTop="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/dimen_medium"
+            app:layout_constraintTop_toBottomOf="@+id/imgUserProfile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserLocation"
+            style="@style/customNavigationHeader"
+            android:text="N/A"
+            android:textSize="@dimen/dimen_small"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/customNavigationHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:text="Trip On"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/trip"
+            app:layout_constraintEnd_toStartOf="@+id/trip" />
+
+        <Switch
+            android:id="@+id/trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvTenantAliasName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserLocation" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTenantAliasName"
+            style="@style/customNavigationItem"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/trip" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_five"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUserName"
+                    style="@style/customNavigationHeader"
+                    android:text="N/A"
+                    android:textSize="@dimen/dimen_medium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUserLocation"
+                    style="@style/customNavigationHeader"
+                    android:text="N/A"
+                    android:textSize="@dimen/dimen_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_ten">
+
+                <TextView
+                    style="@style/customNavigationHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Trip On"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llHeader"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_card_content_padding">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTenantAliasName"
+                    style="@style/customNavigationItem"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tvTenantAlias"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTenantAlias"
+                    style="@style/customNavigationItem"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <View style="@style/viewStyle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>-->
+</layout>

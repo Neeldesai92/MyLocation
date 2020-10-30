@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Log"
+        android:title="LOG"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/Call"
+        android:icon="@drawable/ic_call"
+        android:title="Call"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/hospital"
+        android:orderInCategory="1"
+        android:title="Hospital" />
+
+    <item
+        android:id="@+id/gasstation"
+        android:orderInCategory="1"
+        android:title="Gas Station" />
+
+    <item
+        android:id="@+id/clear"
+        android:orderInCategory="1"
+        android:title="Clear" />
+
+
+    <item
+        android:id="@+id/Bakcup"
+        android:orderInCategory="1"
+        android:title="Bakcup" />
+    <item
+        android:id="@+id/restore"
+        android:orderInCategory="1"
+        android:title="Restore" />
+</menu>

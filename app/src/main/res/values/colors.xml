@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   <color name="colorPrimary">#3F51B5</color>
+       <color name="colorPrimaryDark">#303F9F</color>
+       <color name="colorAccent">#fc6363</color>-->
+
+    <color name="colorPrimary">#47557C</color>
+    <color name="colorPrimaryDark">#47557C</color>
+    <color name="colorAccent">#419FE0</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="black_tranprent">#8d000000</color>
+
+    <color name="colorFocal">#4B98E8</color><!--Tool Tip-->
+    <color name="colorActivated">#cf3a33</color>
+    <!--Ripple Effect For Accent Color-->
+    <color name="colorNormal">#A6AAA9</color>
+    <!--Ripple Effect For Normal Color-->
+    <!-- Used for specially title and message -->
+    <!-- Used for specially title   -->
+    <!--colorPrimary-->
+    <!-- Used for the positive button -->
+    <!--colorAccent-->
+    <!--Used when we use enter something or input box So text color should be this-->
+
+    <color name="colorCanvasBackgroundWithCards">#424851</color>
+
+    <color name="colorLabel">#666666</color>
+    <color name="colorInfoValue">#424851</color>
+    <color name="colorValue">#444444</color>
+    <color name="colorHint">#949EAB</color>
+
+    <color name="colorNavigationHeaderItem">#FFFFFF</color>
+    <color name="colorNavigationItem">#3d3b3b</color>
+
+    <!--Tenant Registration,Authentication and Module Selection-->
+
+    <color name="colorNotes">#888888</color>
+    <color name="colorDivider">#D4DEE4</color>
+
+    <!-- Used for specially title and message -->
+    <color name="colorAlertTextColor">#424851</color><!--colorLabel-->
+    <color name="colorAlertTitleColor">#000000</color>
+    <color name="colorAlertButtonDisable">#fc6363</color>
+
+    <color name="colorScannedQty">#2A9E69</color>
+    <color name="colorRed">#FF4500</color>
+    <color name="colorBlue">#0069BA</color>
+    <color name="colorSPUnderLine">#000000</color>
+
+    <color name="polylineColor">#3F51B5</color>
+
+    <color name="nearby_recycler_transparent">#7e000000</color>
+
+    <color name="statusbar_tranprent">#00000000</color>
+
+    <color name="colorratingActive">#e4b50c</color>
+
+    <color name="colorGray">#3d3b3b</color>
+
+    <color name="bg_edittext_deviceId_text">#a6aaab</color>
+    <color name="color_company_code">#2FD5D9D8</color>
+    <color name="color_disconnect">#F26E60</color>
+
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
